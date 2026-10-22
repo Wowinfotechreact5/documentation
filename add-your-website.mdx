@@ -1,0 +1,181 @@
+---
+title: "WOWagent Website Setup | AI, SEO & Lead Generation"
+sidebarTitle: "Add Website"
+description: "Get your website ready for AI-powered engagement. Add your domain to WOWagent to begin setting up SEO checks, security monitoring, and lead capture."
+---
+
+Add Your Website is the first setup step in WOWagent.
+
+After you add a website, WOWagent can prepare website monitoring, SEO checks, security checks, AI assistant setup, and lead capture.
+
+![Onboarding Flow](/logo/images/onboarding-flow.png "Onboarding Flow")
+
+## Where To Find It
+
+Open onboarding:
+
+[https://portal.wowagent.ai/onboard](https://portal.wowagent.ai/onboard)
+
+You see this page in 2 cases:
+
+1. **The first time you log in after signing up.** WOWagent takes you to `/onboard` automatically.
+2. **When you add a second website later.** Go to the Dashboard, open the website switcher, and use the **Add Website** window.
+
+Both ask for the same 2 fields and work the same way. Onboarding uses the full screen, while the Add Website window is smaller.
+
+## Why You Must Add Your Website First
+
+WOWagent does not work without a website profile. Here is why:
+
+- **Every feature is linked to your website profile.** Chatbot settings, Knowledge Base, leads, inbox, SEO, security, forms, credits, and plan slots all depend on which website you selected.
+- **Without a website, nothing has data.** The Dashboard is empty, the AI Assistant has nowhere to save settings, SEO shows no snapshots, and Health shows no scan data.
+- **Adding a website uses 1 slot from your subscription plan.** If your plan allows 1 website and you try to add a second one, you get `PLAN_LIMIT_EXCEEDED` and must upgrade in Billing.
+
+So, add your website before anything else. Without a website, there is no data anywhere.
+
+## Step 1: Start Onboarding
+
+Click **Get Started** to begin the website setup flow.
+
+If you have more than one workspace, first select the correct workspace from the workspace switcher, and check the workspace name in the top-left corner. If you choose the wrong workspace, the website goes to the wrong team. You can switch later, but credits and plans belong to each workspace separately.
+
+Then click **Next** to go to the Business Name and Domain screen.
+
+## Step 2: Enter Business Name
+
+Add your business name. Use the same name your customers recognize.
+
+Example:
+
+**WOWagent**
+
+Rules:
+
+- The name is required and cannot be empty. Extra spaces are removed automatically.
+- In the Add Website window, the name can be up to 40 characters.
+- In the Add Website window, only letters and spaces are allowed (numbers and symbols are blocked). In onboarding, extra spaces are trimmed and combined into one.
+- This name is used in the chatbot greeting, PDF reports, the Knowledge Base business profile, and lead notifications. Use your official name, not a short form.
+
+If you rebrand later, you can edit the name in Website Overview or Business Profile. The chatbot and reports update only after you edit it, and old leads keep the old name.
+
+## Step 3: Enter Website Domain
+
+Enter only the clean domain name.
+
+Correct example:
+
+**example.com**
+
+Do not enter:
+
+- `https://example.com`
+- `http://example.com`
+- `www.example.com`
+- **example.com/contact**
+- **example.com?source=google**
+
+The domain must not include `https://` or `http://`, `www`, a page path, a query, or extra spaces.
+
+**Why are the rules so strict?**
+
+- WOWagent cleans up the domain: it changes it to lowercase and removes `www.` and `https://`. For example, `WWW.Example.COM` becomes `example.com`.
+- Only the `domain.tld` format is accepted. Do not include `http`, a `/`, a `:port`, or a page path.
+- If you add a path such as `example.com/blog`, crawling, widget verification, and the SSL check will fail, because WOWagent expects the root domain.
+
+Common mistakes:
+
+- **Pasting from your browser with `https://`:** Remove it.
+- **A space at the end:** Remove it.
+- **Including `www.`:** WOWagent removes it automatically, but it is better to type the domain without it.
+- **Using a subdomain:** `shop.example.com` is allowed if it is your real website, but use the main domain your customers visit.
+
+## Step 4: Analyze Website
+
+Click **Analyze Website**.
+
+Here is what happens when you click it:
+
+1. WOWagent checks the format of the business name and domain, and checks whether you already added this website. If you did, you see `already been registered by you`.
+2. WOWagent then checks whether the website is public, whether the domain is already active in another account, and whether a plan slot is available. If you have no active subscription or have reached your limit, you see an orange box with a **Manage Plan** button that opens Billing.
+3. If everything passes, WOWagent saves this website as your selected website, shows the `Website Added Successfully` popup, and takes you to the main panel.
+
+This takes 5 to 15 seconds.
+
+<Warning>
+  Do not double-click. If you close the tab too early, the website may be created but not selected. In that case, reopen the Dashboard and select it manually.
+</Warning>
+
+WOWagent creates your website profile and continues to the main panel.
+
+WOWagent also sets these default values for you, so you do not need to fill them in:
+
+- **Industry:** The default industry.
+- **Hosting provider:** The default provider.
+- **Country:** Other.
+- **Hosting expiry date:** 1 year from today.
+
+You can change these later in Website Overview or the hosting settings.
+
+## What WOWagent Checks After Adding
+
+WOWagent can help analyze:
+
+- **SEO health:** Whether pages can be crawled, meta tags, sitemap, and robots.txt.
+- **Website performance:** Speed and detected technology (for example, WordPress or Google Tag Manager).
+- **SSL security:** Whether the certificate is valid, its expiry date, and Force SSL.
+- **Domain status:** DNS, domain registration (WHOIS), and hosting.
+- **Traffic insights:** Empty at first. You need to connect Google later.
+- **Lead generation readiness:** Whether your chatbot and forms are ready and your widget is verified.
+
+<Note>
+  Right after you add a website, many scores are empty. To fill in the data, go to [Integration Center](/integration-center), verify the widget, run a full audit, and connect Google. Adding the website alone does not fill in everything.
+</Note>
+
+## If Your Domain Does Not Work
+
+Check that:
+
+- The domain is typed correctly.
+- The domain is not already added.
+- The website is live.
+- DNS is working.
+- SSL is active.
+- The website is not blocking scans.
+
+<AccordionGroup>
+  <Accordion title="Domain invalid">
+    You included `https://`, a slash, a page path, or a port. Type the domain again as `example.com`.
+  </Accordion>
+
+  <Accordion title="Already registered by you">
+    Check the website switcher and select the website there instead of adding it again.
+  </Accordion>
+
+  <Accordion title="Registered by someone else">
+    The domain is already claimed in another workspace. Contact support with proof that you own the domain.
+  </Accordion>
+
+  <Accordion title="PLAN_LIMIT_EXCEEDED / No active subscription">
+    Your trial has ended or your plan has no free website slots. If you are the workspace owner, go to Billing. Other members see `only owner can change`.
+  </Accordion>
+
+  <Accordion title="Website not live / DNS fail">
+    Open your domain in an incognito window. If it does not load there, fix your hosting or DNS first. Private addresses such as `localhost` or `192.168.x.x` always fail, because the website must be public.
+  </Accordion>
+
+  <Accordion title="Blocking scans">
+    A firewall, Cloudflare Bot Fight Mode, or a password-protected staging site can block the WOWagent crawler. Allow the crawler, or use your live public URL.
+  </Accordion>
+</AccordionGroup>
+
+If the issue continues, create a support ticket from the [Support Tickets](https://portal.wowagent.ai/support-tickets) page. Include your domain, a screenshot, and the error text.
+
+<CardGroup cols={2}>
+  <Card title="Next: Website Overview" icon="gauge" href="/website-overview">
+    Select your website and run an audit.
+  </Card>
+
+  <Card title="Next: Integration Center" icon="plug" href="/integration-center">
+    Install the widget. This is required for live chat.
+  </Card>
+</CardGroup>

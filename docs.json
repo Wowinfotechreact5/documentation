@@ -1,0 +1,136 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "WOWagent Docs",
+  "colors": {
+    "primary": "#FF6900",
+    "light": "#FFFFFF",
+    "dark": "#111827"
+  },
+  "favicon": {
+    "light": "/images/favicon.ico",
+    "dark": "/images/favicon.ico"
+  },
+  "navigation": {
+    "pages": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "welcome-to-wowagent",
+          "signup",
+          "login",
+          "forgot-password",
+          "quickstart",
+          "add-your-website"
+        ]
+      },
+      {
+        "group": "Website",
+        "pages": [
+          "website-overview",
+          "integration-center",
+          "install-widget",
+          "website-health-and-security"
+        ]
+      },
+      {
+        "group": "AI Assistant",
+        "pages": [
+          "chatbot-management",
+          "3d-avatar-shareable-link",
+          "knowledge-base",
+          "word-normalization",
+          "customer-inbox-and-leads",
+          "ai-navigation"
+        ]
+      },
+      {
+        "group": "Growth Tools",
+        "pages": [
+          "seo-intelligence",
+          "ai-growth-and-content",
+          "forms-and-enquiries"
+        ]
+      },
+      {
+        "group": "Account and Help",
+        "pages": [
+          "profile-billing-and-team",
+          "plans-credits-and-limits",
+          "troubleshooting",
+          "faq",
+          "glossary"
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Website",
+          "icon": "globe",
+          "href": "https://wowagent.ai/"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/images/WOWagentlogoTM.png",
+    "dark": "/images/WOWagentlogoTMwhite.png",
+    "href": "https://wowagent.ai/"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Start Free Trial",
+      "href": "https://portal.wowagent.ai/sign-up"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/wowagent",
+      "website": "https://wowagent.ai/",
+      "instagram": "https://instagram.com/wowagentai",
+      "facebook": "https://facebook.com/wowagent"
+    }
+  },
+  "background": {
+    "color": {
+      "light": "#F9F9FB",
+      "dark": "#111827"
+    }
+  },
+  "appearance": {
+    "default": "light"
+  },
+  "description": "Engage Every Visitor with AI",
+  "fonts": {
+    "family": "Inter"
+  },
+  "banner": {
+    "content": "✦ See WOWagent in Action · Start Your 7-Day Free Trial · Book a Free Demo ✦",
+    "dismissible": true,
+    "type": "info",
+    "color": {
+      "light": "#FF6900",
+      "dark": "#FF6900"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/untitled-page-2",
+      "destination": "/login",
+      "permanent": true
+    },
+    {
+      "source": "/untitled-page",
+      "destination": "/website-overview",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "/introduction",
+      "permanent": false
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+---
+title: "Create & Share a 3D Avatar Link | WOWagent Guide"
+sidebarTitle: "3D Avatar Link"
+description: "Follow the WOWagent guide to generate a shareable 3D avatar link and give your audience an easy way to access your AI-powered avatar experience."
+---
+
+The 3D Avatar Shareable Link gives your website one public URL where visitors can talk directly to your WOWagent AI assistant through an interactive 3D avatar. Share it on social media, in emails, or as a QR code. The link stays the same even when you change the avatar.
+
+![3D Avatar Shareable Link tab in Chatbot Management](/images/3d-avatar-shareable-link.png)
+
+## What Visitors Get
+
+The shared page opens a full-screen 3D avatar that supports:
+
+- Text conversation.
+- Voice conversation.
+- Automatic voice-session startup.
+- Your configured assistant greeting.
+- Your currently selected 3D avatar.
+- Your configured assistant voice and visual settings.
+
+## Requirements
+
+The shareable link is available when:
+
+- The chatbot uses the **3D Avatar** widget layout.
+- The website has a valid widget integration and site key.
+- The interactive 3D Avatar feature is available on your plan.
+- The public widget is enabled.
+- The **3D Avatar Shareable Link** is not disabled in the **Integration Center**.
+
+<Note>
+  If your chatbot is not set to the **3D Avatar** layout, the **3D Avatar Shareable Link** tab stays unavailable.
+</Note>
+
+## Public URL
+
+Each website gets one stable URL based on its hostname:
+
+```text
+https://portal.wowagent.ai/{website-slug}
+```
+
+For example, the website `agroj.ai` gets the slug `agroj-ai`. The URL loads whichever 3D avatar is currently selected, so changing the avatar never changes the link.
+
+## Share Your Avatar Link
+
+<Steps>
+  <Step title="Set the 3D Avatar layout">
+    Go to **AI Assistant > Chatbot Management > Bot Configuration**, set **Widget Layout** to **3D Avatar**, and click **Save**.
+  </Step>
+  <Step title="Open the shareable link tab">
+    Click the **3D Avatar Shareable Link** tab. The status badge shows **Active** when the link is live.
+  </Step>
+  <Step title="Copy or open the URL">
+    Under **Public Shareable URL**, click **Copy** to copy the link, or **Open** to view the public page in a new tab.
+  </Step>
+  <Step title="Share it">
+    Paste the link into social posts, emails, or a QR code generator.
+  </Step>
+</Steps>
+
+<Tip>
+  Save your changes in **Bot Configuration** before sharing, so the public page matches your preview exactly.
+</Tip>
+
+## Enable or Disable the Link
+
+You turn the public link on or off from the **Integration Center**, where it is listed as **3D Avatar Shareable Link**.
+
+![3D Avatar Shareable Link in the Integration Center](/images/integration-center-3d-avatar-link.png)
+
+<Steps>
+  <Step title="Open Integration Center">
+    Select the correct website in the website switcher, then click **Integration Center** under **Tools** in the sidebar.
+  </Step>
+  <Step title="Find the 3D Avatar Shareable Link row">
+    Scroll to the **3D Avatar Shareable Link** row. The **Status** column shows **Active** when the link is live.
+  </Step>
+  <Step title="Disable or enable the link">
+    Click **Disable** in the **Action** column to turn off the public link. To turn it back on, use the same row's action button.
+  </Step>
+</Steps>
+
+<Note>
+  Disabling the link only stops public access. The URL stays the same, so links you already shared work again once you re-enable it.
+</Note>
+
+## Owner Controls
+
+As the website owner, you can:
+
+- Select the 3D Avatar layout.
+- Select the active avatar.
+- Configure avatar size and mobile size.
+- Configure avatar framing.
+- Configure voice and voice speed.
+- Configure widget colors and visual settings.
+- Enable or disable the public share link.
+- Copy the public share URL.
+
+## Important Notes
+
+- The public URL is website-based and remains stable when the selected avatar changes.
+- Disabling the link does not delete the URL. Re-enabling it makes the same URL available again.
+- The shared avatar page does not automatically submit website forms.
+- Each public session uses a short-lived signed token for security.
+- The selected avatar and voice settings are loaded when the page opens. Visitors who already have the page open see new settings after they reload.
+
+<Warning>
+  Public visitor conversations consume your website's credits, charged per message. Keep an eye on your credit balance after sharing the link widely.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Chatbot Management" icon="robot" href="/chatbot-management">
+    Configure the layout, avatar, voice, and colors.
+  </Card>
+
+  <Card title="Plans, Credits and Limits" icon="coins" href="/plans-credits-and-limits">
+    See how credits are used and how to top up.
+  </Card>
+</CardGroup>

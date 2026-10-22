@@ -1,0 +1,254 @@
+---
+title: "AI Website Navigation Tool | WOWagent"
+sidebarTitle: "AI Navigation"
+description: "Explore AI-powered website navigation with WOWagent. Help users discover website content, navigate information more easily, and improve the overall visitor experience."
+---
+
+AI Navigation helps your assistant guide visitors to the right page on your website.
+
+Instead of only answering questions, the assistant can understand what a visitor wants and suggest or open the most relevant page. This reduces drop-off and increases clicks on demo, booking, and checkout pages.
+
+## AI Navigation URL
+
+Open:
+
+[https://portal.wowagent.ai/ai-navigation](https://portal.wowagent.ai/ai-navigation)
+
+Or, in the left menu, click **AI Navigation**.
+
+First, select the correct website from the website switcher. Rules are saved separately for each website, so the rules list changes when you switch websites.
+
+## What AI Navigation Does
+
+AI Navigation can help visitors find pages such as:
+
+- Pricing pages with a plan comparison
+- Contact pages with a phone number, form, and map
+- Booking pages with a calendar and time slots
+- Main service pages and detailed sub-service pages
+- Product pages, categories, and variants
+- Support pages, FAQs, and ticket forms
+- Blog articles and guides
+- Policy pages, such as refund, privacy, and terms
+- Location pages with an address and opening hours
+- Demo request pages with a form
+- Checkout or enquiry pages with a call to action
+
+**How it works:** A visitor types what they need in the chat. The assistant matches their message to the intent keywords in your rules and finds the destination. It then takes one of three actions: **URL Redirect** (opens a page), **DOM Focus** (scrolls to a section), or **Modal Trigger** (opens a popup). Depending on the rule settings, the visitor sees a suggestion chip or the page opens automatically.
+
+**Result:** You get fewer "How do I find X?" chats and more visitors landing directly on the right page. Check User Intent Analytics to see the impact.
+
+## Navigation Rules
+
+Navigation Rules connect visitor intent to pages on your website. Each rule links one intent to one destination with one action type.
+
+You manage these fields for each rule:
+
+- **Rule name:** An internal label, such as "Pricing Intent Main".
+- **Intent keywords:** The phrases visitors type. Example: price, pricing, cost, plan cost, rate card.
+- **Target type:**
+  - **URL Redirect** opens a full page.
+  - **DOM Focus** scrolls to a section on the same page, such as the pricing table's section ID.
+  - **Modal Trigger** opens a popup, such as a demo form's ID.
+- **Target value:** The full page URL, section ID, or popup ID. For example, your pricing page URL, or the section ID of your contact area for scrolling.
+- **Action:** **Suggest** only shows a chip. **Auto open** takes the visitor there directly. Suggest is the safer choice for the first month.
+- **Status:** Active or Paused.
+- **Priority:** When 2 rules match the same words, the rule with the higher priority wins.
+
+**Examples:**
+
+- If a visitor asks about pricing, the assistant can guide them to your pricing page. The rule matches "price", "pricing", and "cost" and suggests your pricing URL.
+- If a visitor asks to contact your team, the assistant can guide them to your contact page. The rule matches "contact", "call", "phone", and "talk to human" and either opens your contact URL or opens your contact popup.
+- If a visitor asks about a product, the assistant can guide them to the product page. The rule matches the product name along with words like "buy" and "details", and redirects to that product's URL.
+
+Start with 8 to 10 rules for your core pages: pricing, contact, booking, your top 3 services, your top 2 products, support, and your refund policy. Then add more rules based on your analytics.
+
+## Navigation Rules URL
+
+Open:
+
+[https://portal.wowagent.ai/ai-navigation](https://portal.wowagent.ai/ai-navigation)
+
+On this page, you can add, edit, delete, pause, and search rules, and move between pages of the list. Use **Auto-Generate** to create draft rules from the pages WOWagent found when crawling your website, then edit the keywords manually. Auto-generated drafts save time, but always review their URLs, because they can pick old or duplicate pages.
+
+Whenever a URL on your website changes, update the rule's target value on the same day. An old URL leads to a 404 error and shows as a failed navigation in analytics.
+
+## Page Re-initialization
+
+Page Re-initialization is useful for websites built as single-page apps (SPAs). An SPA is a website built with tools like React, Vue, or Next.js, where pages change without the browser fully refreshing.
+
+On these websites, the widget loads on the first page but may not notice when the visitor moves to another page. As a result, suggestions stop working after the visitor navigates within your site.
+
+If your website works this way, you need to set up re-initialization so the widget keeps working correctly after navigation.
+
+Page Re-initialization URL:
+
+[https://portal.wowagent.ai/ai-navigation/soft-navigation](https://portal.wowagent.ai/ai-navigation/soft-navigation)
+
+Follow these steps on the **Soft Navigation Setup** page:
+
+<Steps>
+  <Step title="Enable soft navigation for this website">
+    Select the router mode your developer recommends: **history** or **hash**.
+  </Step>
+  <Step title="Add route patterns to watch">
+    For example, /pricing and /contact.
+  </Step>
+  <Step title="Save and test on live site">
+    Open your live website and use the menu to go from the home page to the pricing page. Check that the widget still opens and your rules still work.
+  </Step>
+  <Step title="Retest if widget stops after route change">
+    If the widget stops working after a page change, ask your developer to re-initialize the widget whenever the page route changes, then test again.
+  </Step>
+</Steps>
+
+<Note>
+  Normal WordPress sites and multi-page websites do not need this setting. Keep it OFF to avoid extra reloads.
+</Note>
+
+## Test AI Navigation
+
+Use **Test AI Navigation** to check whether your rules work. Always test in the panel before relying on rules on your live website.
+
+Try these test phrases one by one:
+
+- I want pricing
+- I want to contact support
+- Show me your services
+- Book an appointment
+- I want to read your refund policy
+- Show me product details
+- I need help choosing a plan
+
+Test AI Navigation URL:
+
+[https://portal.wowagent.ai/ai-navigation/testing](https://portal.wowagent.ai/ai-navigation/testing)
+
+How to test:
+
+<Steps>
+  <Step title="Open testing page and select website">
+    Type a test phrase exactly as a visitor would. Include a typo at least once, such as "pricee".
+  </Step>
+  <Step title="Check matched rule details">
+    Check that the rule name, target type, and destination shown are correct.
+  </Step>
+  <Step title="Click Open or Simulate">
+    Check that the page loads and that the popup or scroll works.
+  </Step>
+  <Step title="Review mismatches">
+    If nothing matches, note the phrase as a candidate for a new rule. If the wrong rule matches, fix its keywords or priority.
+  </Step>
+</Steps>
+
+<Note>
+  The testing page shows a warning if your website's security settings block the preview, and suggests opening the page in a new tab. This means your website's security headers are blocking the preview window. It does not mean the rule failed. Open the destination in a new tab to check it, and allow the preview domain in your website settings if needed.
+</Note>
+
+Test at least 15 phrases: 10 core phrases and 5 edge cases with short forms like "rate", "location", or "human".
+
+## User Intent Analytics
+
+User Intent Analytics shows you what visitors are trying to do. Check it every week to find ideas for new rules and fix rules that fail.
+
+Use it to find:
+
+- The most popular visitor intents, with counts and trends
+- Common navigation requests, for example "pricing" making up 40 percent of requests
+- Pages that visitors ask for most but that have no rule
+- Missing website journeys, such as visitors dropping off between pricing and booking
+- New rule ideas from the list of failed or unmatched requests
+- High-intent behavior, such as a visitor asking about both a demo and pricing in one session
+
+User Intent Analytics URL:
+
+[https://portal.wowagent.ai/ai-navigation/user-intent](https://portal.wowagent.ai/ai-navigation/user-intent)
+
+**Weekly routine:** Open the last 7 days and sort by count from highest to lowest. Your top 5 intents should all have rules with a green success rate. If an intent has a high count and a high failure rate, add or fix its rule the same day. Export or note the results each week for your content team.
+
+The journey view shows a summary of each visitor's path: which page they were on, what they asked, and where they went next. Use it to fix confusing menu labels.
+
+## Recommended Setup
+
+<Steps>
+  <Step title="List your important website pages">
+    Pick your top 10 pages from your menu and footer, including pricing and contact. Note their exact URLs, section IDs, and popup IDs.
+  </Step>
+  <Step title="Create navigation rules for common visitor needs">
+    Write intent keywords in the words your customers use, not your internal names. Set the action to **Suggest** at first.
+  </Step>
+  <Step title="Test each rule in testing page">
+    Test 2 phrases for each rule and fix any mismatches.
+  </Step>
+  <Step title="Add missing rules from first test fails">
+    Aim for zero critical misses on your top 10 pages.
+  </Step>
+  <Step title="Review User Intent Analytics regularly">
+    Spend 10 minutes each week reviewing the last 7 days.
+  </Step>
+  <Step title="Improve rules based on real visitor behavior">
+    Add new keywords, change priorities, and pause duplicate rules that compete with each other.
+  </Step>
+</Steps>
+
+<Warning>
+  Do not create 50 rules on the first day. Start with 10 good rules, then grow to around 30 based on your data.
+</Warning>
+
+## Best Practices
+
+Use your customers' language when you create rules. Think about what people type into a search box, not how your sitemap is organized.
+
+Do not base rules only on page names. A page named "Solutions" means nothing to a visitor.
+
+Think about what visitors actually ask for. Add synonyms, Hindi-English mixed phrases, and short forms. For example, a pricing rule needs: price, pricing, cost, rate, charge, fees, and plan cost.
+
+For example, visitors are more likely to say:
+
+> I need help
+
+than:
+
+> Support page
+
+Create rules that match real visitor intent. For example, a help rule needs: help, stuck, confused, issue, problem, support, contact support, and talk to human.
+
+Other tips:
+
+- Create one main rule for each intent. Duplicate rules cause random matches, so merge them or set priorities.
+- Use full target URLs that start with https and have no typos at the end. Test the links every month.
+- For DOM Focus, use a stable section ID that your developer will not keep renaming.
+- For Modal Trigger, test the full flow (opening, closing, and submitting), not just opening.
+- Pause seasonal rules after an offer ends instead of deleting them, so you keep their data.
+
+## When To Update AI Navigation
+
+Update your rules when:
+
+- **You add new pages:** Create a rule the same day, test it, and activate it.
+- **You change page URLs:** Edit the target value, test the old phrase again, and check analytics for 404 failures.
+- **You launch new services:** Add a rule with keywords that link to the service detail page.
+- **Visitors ask for pages that have no rules:** Check the unmatched list every week and add rules for the top 3.
+- **Analytics shows the same failed navigation repeatedly:** Fix the rule's keywords, priority, or target.
+- **You change your pricing, contact, booking, or support pages:** Retest all linked rules, and update section IDs if your theme changed.
+
+After a theme or website builder update, retest all 10 core rules. Theme changes often break section IDs and popup IDs, even when the URLs stay the same.
+
+If rules suddenly stop working on your live website but still pass in testing:
+
+1. Check that the widget shows as verified in the Integration Center.
+2. Check whether your website's security settings are blocking the preview.
+3. If your website is a single-page app, check the soft navigation setting.
+4. Clear your cache and test again in an incognito window.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Inbox and Leads" icon="inbox" href="/customer-inbox-and-leads">
+    See what visitors asked and follow up.
+  </Card>
+
+  <Card title="Forms" icon="file-lines" href="/forms-and-enquiries">
+    Link forms to visitor intents.
+  </Card>
+</CardGroup>

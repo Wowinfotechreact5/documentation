@@ -1,0 +1,314 @@
+---
+title: "Website Integrations for Analytics & SEO | WOWagent"
+sidebarTitle: "Integration Center"
+description: "Connect Google Analytics, Search Console, Tag Manager, and website tracking with WOWagent to monitor traffic, uncover SEO opportunities, and manage your site."
+---
+
+Integration Center is where you connect and verify the services WOWagent needs for tracking, website widget setup, analytics, publishing, and other website operations. It is also where you turn your public 3D Avatar Shareable Link on or off.
+
+Some features in WOWagent stay locked until the required integrations are complete.
+
+![Integration Cent](/images/integration-cent.png "Integration Cent")
+
+## Where To Find It
+
+Open:
+
+[https://portal.wowagent.ai/website/integrations](https://portal.wowagent.ai/website/integrations)
+
+Or, in the sidebar under **Tools**, click **Integration Center**.
+
+First, select the correct website from the website switcher. Integrations are set up separately for each website, so the statuses change when you switch websites. If no website is selected, the page is empty.
+
+## Why Integration Center Is Important
+
+Integration Center connects your website with the tools that important WOWagent features need.
+
+Without integrations, the WOWagent panel still works, but nothing reaches your live website. Sandbox tests work, but real visitors see no chatbot, no leads reach your inbox, and your SEO and traffic data stay empty.
+
+You need these integrations for:
+
+- **Website tracking:** To see visitors, page views, and behavior.
+- **AI assistant widget setup:** To show the chatbot on your live website.
+- **Chatbot verification:** To confirm the script is installed correctly.
+- **Analytics reports:** To fill in the Dashboard and traffic insights.
+- **SEO insights:** To get keywords, clicks, and site health data from Google.
+- **Blog publishing:** To publish AI blog articles on your domain.
+- **DNS or domain setup:** To verify ownership and set up the publishing path.
+- **Marketing and tracking services:** To connect your pixel, Tag Manager, and Business Profile.
+- **3D avatar sharing:** To turn the public 3D Avatar Shareable Link on or off.
+
+If you skip this page, other pages will look locked or empty. Always complete this setup right after you [add your website](/add-your-website).
+
+## Integration Readiness
+
+The Integration Readiness section shows how complete your setup is.
+
+It shows:
+
+- **Connected integrations:** Green, and working.
+- **Disconnected integrations:** Grey, and need to be connected.
+- **Required actions:** A button to fix the item now.
+- **Setup required status:** Items you must complete before features unlock.
+- **Verification status:** Whether the integration is detected on your live website.
+
+If an item shows **Disconnected** or **Setup required**, click its action button and complete the setup. After each fix, click **Verify** or **Refresh** and wait 10 to 30 seconds. Do not leave the page until the status turns green.
+
+The readiness percentage is calculated for each website. 100 percent means the website is ready to go live. If it is below 60 percent, do not run ads yet, or you will lose leads.
+
+## Common Integrations Explained
+
+You can see setup cards for the following integrations.
+
+### Pixel Code
+
+A small tracking code that tracks your visitors. **Why you need it:** Without the pixel, your Dashboard traffic and lead sources stay empty. Copy the pixel, paste it into your website's head section, save, and click **Verify**.
+
+### Blog Subdomain
+
+A subdomain such as blog.example.com for your AI articles. **Why you need it:** To publish blogs on a subdomain, you must add a CNAME record in your DNS and verify it. Without it, publishing fails with a "DNS unverified" error.
+
+### Cloudflare Path Publishing
+
+Publishes blogs under a path such as example.com/blog using a Cloudflare Worker. **Why you need it:** Without the Worker and its route, the Publish button stays disabled and shows the message "Add prefix in Cloudflare Path Publishing". Set up the Worker, add the route, and click **Verify**.
+
+### Google Analytics
+
+Connects your GA4 property to get traffic, user, and behavior data. **Why you need it:** Without it, the Analytics tab and content performance stay empty. Click **Connect**, allow access with your Google account, select the property for this website only, and click **Save**.
+
+### Tag Manager
+
+Connect your Google Tag Manager (GTM) container if you add the widget through GTM. **Why you need it:** If you use GTM to add the widget, WOWagent checks that container. If the wrong container is connected, the widget is not detected. Select the correct container ID, such as GTM-XXXXXXX.
+
+### Search Console
+
+Connects your Search Console site to get clicks, impressions, keywords, and sitemap submission. **Why you need it:** Without it, SEO Intelligence snapshots stay empty and sitemap submission fails. Connect the exact website URL, making sure https and www match.
+
+### Google Business Profile
+
+Connects your business location for reviews, posts, and a check of your business name, address, and phone details. **Why you need it:** Without connecting your account and linking your location, posts and review replies do not work. Connect your account, select your location, and click **Save**.
+
+### 3D Avatar Shareable Link
+
+Controls the public URL where visitors talk to your AI assistant through a full-screen 3D avatar. **Why you need it:** This row is where you turn the public link on or off. When the status shows **Active**, click **Disable** to stop public access. Use the same row's action button to turn it back on. The URL does not change when you disable and re-enable it. See [3D Avatar Shareable Link](/3d-avatar-shareable-link) for details.
+
+![3D Avatar Shareable Link row in the Integration Center](/images/integration-center-3d-avatar-link.png)
+
+## What You Should Do First
+
+When you open Integration Center, check which items are incomplete.
+
+Start with the required items. Required items show a red dot or a lock icon. Optional items can wait.
+
+Usually, you need to complete these steps:
+
+<Steps>
+  <Step title="Set up website widget or pixel">
+    Copy the script, paste it on your website, and click **Verify**. This turns on live chat.
+  </Step>
+  <Step title="Connect analytics">
+    Connect Google Analytics and Tag Manager. This fills in your traffic data.
+  </Step>
+  <Step title="Connect search or SEO">
+    Connect Search Console. This fills in your SEO data.
+  </Step>
+  <Step title="Configure blog publishing">
+    If you want to publish content, set up a subdomain or Cloudflare path along with DNS.
+  </Step>
+  <Step title="Set up DNS or Cloudflare">
+    If required, add the CNAME or TXT record, wait 5 to 30 minutes, and click **Verify**.
+  </Step>
+</Steps>
+
+The **3D Avatar Shareable Link** row does not connect an outside service. It shows whether your public avatar link is **Active**, and you can disable it at any time.
+
+Complete the required items first, then the optional ones. Do not move on to the Knowledge Base or Chatbot before the widget shows green. Otherwise, you test only in the Sandbox and might think your live website is working when it is not.
+
+## Locked Features
+
+If a menu item is locked, WOWagent is usually waiting for one or more required integrations.
+
+For example, some growth and publishing features need DNS or blog publishing setup first:
+
+- Publishing AI blogs needs Cloudflare to be verified.
+- Some SEO submissions need Search Console to be connected.
+- Publishing the chatbot needs the widget to be verified.
+
+If something is locked, go back to Integration Center and complete the missing setup. The lock tooltip names the missing item. Complete that item, click **Refresh**, and go back. The lock then clears. If it is still locked after everything shows green, log out and log in once to refresh your plan details.
+
+## Website Widget Setup In Detail
+
+The website widget lets your AI assistant appear on your website. For full platform-by-platform steps, see [Install Widget](/install-widget).
+
+Steps:
+
+<Steps>
+  <Step title="Copy the script">
+    In Integration Center, find the **Website Widget** card and click **Copy Script**. The script includes a `data-key` that links the widget to your website.
+  </Step>
+  <Step title="Paste before the closing head tag">
+    Paste the script just before the closing `</head>` tag on your website. In code view, find the closing head tag and paste the script above it.
+  </Step>
+  <Step title="Install on WordPress">
+    For WordPress, use a Custom HTML option or a Header and Footer plugin. Paste the script into the site-wide header, click **Save**, and clear your cache.
+  </Step>
+  <Step title="Install via GTM">
+    For Google Tag Manager, create a Custom HTML tag, paste the script, set the trigger to **All Pages**, click **Submit**, and publish the container.
+  </Step>
+  <Step title="Install on custom site">
+    For a custom website, paste the script into your main layout template so every page loads it.
+  </Step>
+  <Step title="Verify installation">
+    Go back to the panel and click **Verify**. WOWagent opens your live website and checks for the script with the matching `data-key`.
+  </Step>
+</Steps>
+
+After installation, verify the widget from the panel. The card must show that the installation is detected and the status is verified. Open your live website in an incognito window, and check that the widget bubble appears in the bottom corner. Test opening it, closing it, and the mobile view.
+
+If an ad blocker hides the widget, turn it off while testing. If a theme update removes the script, paste it again and click **Verify** again.
+
+## Analytics And Search Integrations In Detail
+
+Analytics and search integrations help WOWagent understand your website traffic, SEO performance, visitor behavior, and growth opportunities.
+
+If available, connect services such as:
+
+- **Google Analytics:** For sessions, users, and top pages.
+- **Google Search Console:** For clicks, keywords, and indexing.
+- **Tag Manager:** For managing your tags.
+- **Other supported tracking tools:** Such as the pixel.
+
+How to connect:
+
+<Steps>
+  <Step title="Click Connect on the card">
+    Start the connection from the Integration Center.
+  </Step>
+  <Step title="Log in with an admin Google account">
+    Use the Google account that has admin access to Google Analytics or Search Console.
+  </Step>
+  <Step title="Allow permissions">
+    Grant the requested permissions.
+  </Step>
+  <Step title="Select the correct property">
+    For example, if your website uses https, select the https version, not the http version.
+  </Step>
+  <Step title="Save and wait for the first data">
+    Click **Save**, then wait for the first data to arrive. This can take 10 to 60 minutes.
+  </Step>
+</Steps>
+
+Use the same Google account for all three services to avoid mismatches. If you select the wrong property, click **Disconnect** and reconnect with the correct one. Check the **Resources** or **Snapshot** tab to confirm that data is coming in.
+
+## Blog Publishing Setup In Detail
+
+If you want to use AI Growth and publish the content it generates, complete the publishing setup.
+
+Depending on your website setup, this can include domain, DNS, or Cloudflare configuration.
+
+You have two options:
+
+- **Option A, Subdomain:** Enter your blog subdomain, add the CNAME record shown to your DNS provider (such as GoDaddy, Hostinger, or Cloudflare), wait, and click **Verify**.
+- **Option B, Path:** Set up the Cloudflare Worker, add a route for your blog path, and click **Verify**.
+
+Without this setup, AI blogs stay as drafts and publishing fails. The CNAME stays unverified until the DNS change has spread across the internet. Wait 30 minutes after changing DNS, then click **Verify** again. Do not change DNS twice in a short time.
+
+## Recommended Setup Order
+
+<Steps>
+  <Step title="Select the correct website">
+    Choose your website in WOWagent.
+  </Step>
+  <Step title="Open Integration Center">
+    Go to the Integration Center page.
+  </Step>
+  <Step title="Complete required integrations">
+    Look for items with a red dot and finish those first.
+  </Step>
+  <Step title="Install and verify widget or pixel">
+    The status must turn green.
+  </Step>
+  <Step title="Connect analytics and search tools">
+    Select the correct properties.
+  </Step>
+  <Step title="Configure publishing">
+    If you want to use AI content, set up DNS and click **Verify**.
+  </Step>
+  <Step title="Refresh and confirm all green">
+    Reload the page and confirm that all integration statuses are green.
+  </Step>
+</Steps>
+
+After this, set up your [Knowledge Base](/knowledge-base), then [Chatbot Management](/chatbot-management), and then test on your live website.
+
+## If An Integration Fails
+
+Check these points:
+
+<AccordionGroup>
+  <Accordion title="Correct website">
+    Make sure you are working on the correct website. The website switcher must match your live domain.
+  </Accordion>
+
+  <Accordion title="Admin access">
+    Make sure you have admin access to the external service. Connecting with viewer access fails.
+  </Accordion>
+
+  <Accordion title="DNS or website change finished updating">
+    Make sure your DNS or website change has finished updating. Wait 30 minutes after a DNS change.
+  </Accordion>
+
+  <Accordion title="Widget script on correct website">
+    Make sure the widget script was added to the correct website, and check that the `data-key` matches.
+  </Accordion>
+
+  <Accordion title="Website live and publicly accessible">
+    Make sure your website is live and public. Open it in an incognito window to check that it loads. A website running only on your own computer (localhost) cannot be verified.
+  </Accordion>
+
+  <Accordion title="Correct workspace">
+    Make sure you are checking the correct workspace. Integrations are set up for each workspace and website.
+  </Accordion>
+</AccordionGroup>
+
+Extra checks:
+
+<AccordionGroup>
+  <Accordion title="Cache">
+    Clear your website cache and CDN cache after pasting the script.
+  </Accordion>
+
+  <Accordion title="Website security settings">
+    If your website's security settings or firewall block outside scripts, allow the WOWagent script. The test page shows a warning when something is blocked.
+  </Accordion>
+
+  <Accordion title="GTM">
+    Make sure the container is published, not just saved.
+  </Accordion>
+
+  <Accordion title="Google">
+    Make sure the URL matches exactly, including https versus http and `www` versus non-`www`.
+  </Accordion>
+
+  <Accordion title="Cloudflare">
+    Make sure the Worker is deployed and its route is active.
+  </Accordion>
+</AccordionGroup>
+
+If the issue continues, create a support ticket from the panel. Include your website domain, which card failed, a screenshot of the status, what you already tried, and when you made the change.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Install Widget" icon="code" href="/install-widget">
+    Add the chat widget on WordPress, GTM, or any website.
+  </Card>
+
+  <Card title="Chatbot Management" icon="robot" href="/chatbot-management">
+    Set up your assistant's name, greeting, and style.
+  </Card>
+
+  <Card title="3D Avatar Shareable Link" icon="share-nodes" href="/3d-avatar-shareable-link">
+    Share a public link where visitors talk to your 3D avatar.
+  </Card>
+</CardGroup>

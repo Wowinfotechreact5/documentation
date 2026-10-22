@@ -1,0 +1,114 @@
+/* Decorative logo tucked into the top right corner, partly clipped by the edge */
+body::after {
+  content: "";
+  position: fixed;
+  top: 20px;           /* moved up; lower = higher on screen */
+  right: -80px;        /* moved further right; more negative = further right */
+  width: 240px;        /* logo size */
+  height: 240px;
+  background: url("/images/logo.png") no-repeat center / contain;
+  opacity: 0.12;       /* faint so it never hides the "On this page" text */
+  pointer-events: none;
+  z-index: -1;         /* keep it behind page content */
+}
+
+/* Faint watermark logo centered in the background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;        /* watermark size */
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background: url("/images/logo.png") no-repeat center / contain;
+  opacity: 0.05;       /* lower = fainter, higher = stronger (e.g. 0.08) */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Larger navbar logo (top left) */
+.nav-logo {
+  height: 40px !important;   /* increase for a bigger logo */
+  width: auto !important;
+  max-height: none !important;
+}
+
+/* Orange "Start Free Trial" button (top right) */
+#topbar-cta-button a,
+a#topbar-cta-button {
+  background-color: #FF6900 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #FF6900 !important;
+  border-radius: 9999px !important;   /* pill shape; use 10px for soft corners */
+  overflow: hidden !important;
+  padding: 6px 16px !important;
+  box-shadow: 0 2px 8px rgba(255, 105, 0, 0.35) !important;
+  transition: background-color 0.2s ease, transform 0.2s ease !important;
+}
+#topbar-cta-button a:hover,
+a#topbar-cta-button:hover {
+  background-color: #E55E00 !important;
+  transform: translateY(-1px);
+}
+#topbar-cta-button a *,
+a#topbar-cta-button * {
+  background: transparent !important;
+  border-radius: 9999px !important;
+  color: #FFFFFF !important;
+}
+
+/* Theme toggle (sun/moon) styled to match the orange CTA */
+[data-component-name="theme-toggle"],
+[data-component-name="theme-toggle"] > button,
+.topbar-right-container button[aria-haspopup="menu"],
+#navbar button[aria-label*="theme" i],
+#navbar button[aria-label*="mode" i] {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+[data-component-name="theme-toggle"] > button {
+  border: none !important;
+  background: transparent !important;
+}
+[data-component-name="theme-toggle"] svg,
+.topbar-right-container button[aria-haspopup="menu"] svg,
+#navbar button[aria-label*="theme" i] svg,
+#navbar button[aria-label*="mode" i] svg {
+  color: #FF6900 !important;
+  stroke: #FF6900 !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+[data-component-name="theme-toggle"]:hover,
+.topbar-right-container button[aria-haspopup="menu"]:hover,
+#navbar button[aria-label*="theme" i]:hover,
+#navbar button[aria-label*="mode" i]:hover {
+  background: transparent !important;
+}
+[data-component-name="theme-toggle"]:hover svg,
+.topbar-right-container button[aria-haspopup="menu"]:hover svg,
+#navbar button[aria-label*="theme" i]:hover svg,
+#navbar button[aria-label*="mode" i]:hover svg {
+  color: #E55E00 !important;
+  stroke: #E55E00 !important;
+}
+
+/* Hide on smaller screens so it never covers content */
+@media (max-width: 1279px) {
+  body::after {
+    display: none;
+  }
+  body::before {
+    width: 280px;
+    height: 280px;
+  }
+}

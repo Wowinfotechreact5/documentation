@@ -1,0 +1,161 @@
+---
+title: " Login to WOWagent AI | Manage Your Website"
+sidebarTitle: "Login"
+description: "Access your WOWagent dashboard to manage website AI tools, engage visitors, capture leads, and optimize your website's performance."
+---
+
+Login is how you enter the WOWagent panel. Without login, Dashboard, Chatbot, Leads, and all other pages stay locked.
+
+![Login](/logo/images/Login.png "Login")
+
+## Where To Find It
+
+Open:
+
+[https://portal.wowagent.ai/login](https://portal.wowagent.ai/login)
+
+After login, you go to the Dashboard automatically. If it is your first time, you go to Onboard to add a website.
+
+## How To Login With Email
+
+<Steps>
+  <Step title="Enter Email Address">
+    No spaces. Example: `you@example.com`
+  </Step>
+  <Step title="Enter Password">
+    Use the show and hide button to check.
+  </Step>
+  <Step title="Click Log In">
+    Click **Log In**.
+  </Step>
+  <Step title="Wait 2 to 3 seconds">
+    Do not double-click.
+  </Step>
+</Steps>
+
+### Rules
+
+- Email must be in a valid format with `@` and a domain.
+- Email cannot contain spaces. Spaces are automatically removed.
+- Password cannot contain spaces.
+- Password is case sensitive. Check Caps Lock if needed.
+
+## How To Login With Google
+
+<Steps>
+  <Step title="Click Continue with Google">
+    Click **Continue with Google**.
+  </Step>
+  <Step title="Select your Google email">
+    Select the same Google email every time.
+  </Step>
+  <Step title="Allow the popup">
+    If the popup is blocked, allow popups for the portal site.
+  </Step>
+  <Step title="Accept the terms (first time only)">
+    If it is your first time, accept the Workspace Terms and Privacy Policy when asked.
+  </Step>
+  <Step title="Go to the Dashboard">
+    You will go to the Dashboard automatically.
+  </Step>
+</Steps>
+
+<Warning>
+  If you change your Google email, you may get an error like `GOOGLE EMAIL CHANGED`. Always use the original email.
+
+  If you get an error like `GOOGLE ACCOUNT CONFLICT`, use email login instead and contact support.
+</Warning>
+
+## Email Not Verified Case
+
+If you see the message **Please verify your email**:
+
+<Steps>
+  <Step title="Open the Verify Your Email popup">
+    A popup shows **Verify Your Email** with a **Resend** button.
+  </Step>
+  <Step title="Click Resend">
+    Click **Resend**.
+  </Step>
+  <Step title="Check your email folders">
+    Check your Inbox, Promotions, Spam, and Junk folders.
+  </Step>
+  <Step title="Click the verification link">
+    Open the email and click the verification link within 24 hours.
+  </Step>
+  <Step title="Log in again">
+    Come back to Login and log in again.
+  </Step>
+</Steps>
+
+<Note>
+  The verification link is valid for 24 hours only. After it expires, click **Resend** again.
+</Note>
+
+After successful verification, you return to the Login page and can log in.
+
+If verification fails because the link is invalid, the link has expired, or a server error occurs, request a new verification link.
+
+## Invite Login Case
+
+If a team member invites you with an invitation link:
+
+- If you already have an account, log in first with the invited email, then click **Accept** and join the workspace.
+- If you get `INVITATION EMAIL MISMATCH`, log out and log in with the invited email address instead of another email.
+- After accepting the invitation, the workspace is selected and you will be taken to the page allowed by your role.
+
+If the invitation shows **unavailable**, **expired**, or **declined**, ask the workspace owner to send a new invitation.
+
+## Forgot Password
+
+On the Login page, click **Forgot Password** and follow the email reset link. The link is valid for 1 hour.
+
+<Note>
+  OTP screens in the UI are not used. Only the email reset link is valid. If the link says `Invalid reset token` or `Reset link expired`, request a new reset link.
+</Note>
+
+For the full steps and password rules, see [Forgot Password](/forgot-password).
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Invalid email or password">
+    Check the email, password, spaces, and Caps Lock. Try Forgot Password if you are not sure about the password.
+  </Accordion>
+
+  <Accordion title="Session expired or 401">
+    Your login session has ended. Log in again. Do not use the browser back button after logout.
+  </Accordion>
+
+  <Accordion title="Verify modal loop">
+    Check your Spam/Junk folder, add the sender to your safe list, and resend the verification email after 1 minute.
+  </Accordion>
+
+  <Accordion title="Google button loading for a long time or not loading">
+    Check your internet connection, allow Google Accounts scripts, disable ad blockers, and reload the page.
+  </Accordion>
+
+  <Accordion title="PLAN SEAT LIMIT EXCEEDED">
+    If this appears during Google login with an invitation, the workspace has reached its member limit. Ask the workspace owner to upgrade the plan or remove a member.
+  </Accordion>
+
+  <Accordion title="LEGAL ACCEPTANCE REQUIRED">
+    Accept the Terms checkbox and try again.
+  </Accordion>
+
+  <Accordion title="Still stuck">
+    Create a Support Ticket with your email, a screenshot of the issue, and the time when the issue occurred.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up WOWagent from first login to a live assistant.
+  </Card>
+
+  <Card title="Forgot Password" icon="key" href="/forgot-password">
+    Reset your password with an email link.
+  </Card>
+</CardGroup>

@@ -1,0 +1,143 @@
+---
+title: "WOWagent Frequently Asked Questions | AI Website Help"
+sidebarTitle: "FAQ"
+description: "Explore answers to common WOWagent questions about its AI website platform, key features, configuration, and everyday use. Find useful information in one place."
+---
+
+This FAQ answers the questions WOWagent users ask most often, from creating an account to installing the chat widget, training the assistant, and managing credits. Each answer is short and links to the full guide for more detail.
+
+## Account and Login
+
+<AccordionGroup>
+  <Accordion title="How do I create a WOWagent account?">
+    Open the [signup page](https://portal.wowagent.ai/sign-up), fill in your name, email, mobile number, and password, accept the Terms, and click **Create Account**. Then verify your email within 24 hours and log in. See [Sign Up](/signup).
+  </Accordion>
+
+  <Accordion title="I did not receive the verification email. What should I do?">
+    Check your Spam, Junk, and Promotions folders. Click **Resend**, wait 2 minutes, and check that you spelled your email correctly during signup. If the link has expired, send a new one from the popup on the Login page.
+  </Accordion>
+
+  <Accordion title="What are the password rules?">
+    Your password must be 8 to 128 characters long and include an uppercase letter, a lowercase letter, a number, and a special character. It must not start with a space. See [Sign Up](/signup#password-rules-in-detail).
+  </Accordion>
+
+  <Accordion title="I forgot my password. How do I reset it?">
+    Use [Forgot Password](/forgot-password) to get a reset link by email. The link is valid for 1 hour.
+  </Accordion>
+
+  <Accordion title="Can I log in with Google?">
+    Yes. Click **Continue with Google** and use the same email every time. If you see "EMAIL VERIFICATION REQUIRED", verify your email first, then log in with Google. See [Login](/login).
+  </Accordion>
+
+  <Accordion title="Why does WOWagent keep sending me back to the login page?">
+    Your session has probably expired, so log in again. If it keeps happening, clear your browser cache and site data for WOWagent, or try another browser. See [Troubleshooting](/troubleshooting#session-expired-or-redirected-to-login).
+  </Accordion>
+</AccordionGroup>
+
+## Websites
+
+<AccordionGroup>
+  <Accordion title="How do I add my website?">
+    Open [onboarding](https://portal.wowagent.ai/onboard), click **Get Started**, enter your business name and domain, and click **Analyze Website**. See [Add Your Website](/add-your-website).
+  </Accordion>
+
+  <Accordion title="Why is my domain not accepted?">
+    Type only the root domain, such as `example.com`. Do not include `https://`, `www.`, a page path, a query, a port, or spaces. Also check that your website is live and public.
+  </Accordion>
+
+  <Accordion title="I see PLAN_LIMIT_EXCEEDED. What does it mean?">
+    Your plan has no free website slots, or your trial has ended. The workspace owner can upgrade in [Billing](https://portal.wowagent.ai/billing). Other members see "only owner can change".
+  </Accordion>
+
+  <Accordion title="Why is a page empty or showing no data?">
+    Most WOWagent data is saved separately for each website. Select the correct website from the website switcher, and check that you are in the correct workspace.
+  </Accordion>
+
+  <Accordion title="Why is a feature locked?">
+    WOWagent is usually waiting for a required integration, such as widget verification, DNS, or publishing setup. The lock tooltip names the missing item. Complete it in [Integration Center](/integration-center), click **Refresh**, and the lock clears.
+  </Accordion>
+</AccordionGroup>
+
+## Chat Widget and Assistant
+
+<AccordionGroup>
+  <Accordion title="How do I add the chatbot to my website?">
+    Copy the widget script from Integration Center, paste it before the closing `</head>` tag on every page, and click **Verify**. See [Install Widget](/install-widget) for WordPress, Shopify, Wix, Webflow, Google Tag Manager, and custom website steps.
+  </Accordion>
+
+  <Accordion title="The chatbot works in the Sandbox but not on my website. Why?">
+    The Sandbox works even when the live widget is not verified. Check that the script is installed site-wide with the correct `data-key`, clear your website and CDN cache, turn off your ad blocker, and click **Verify** again until it shows green.
+  </Accordion>
+
+  <Accordion title="The widget disappeared after I changed my theme. What happened?">
+    Theme changes and redesigns often remove the script. Paste the script again and click **Verify** in Integration Center.
+  </Accordion>
+
+  <Accordion title="Why does the assistant give wrong answers?">
+    The assistant answers from your Knowledge Base, so fix wrong answers there, not in the tone settings. Update your FAQs, products, business profile, or documents, then test again in the Sandbox. See [Knowledge Base](/knowledge-base).
+  </Accordion>
+
+  <Accordion title="What should I add to the Knowledge Base first?">
+    At minimum, add your business profile, business hours, 1 to 2 products or services, at least 5 FAQs, 3 to 5 important website pages, any key documents, and your bot boundaries.
+  </Accordion>
+
+  <Accordion title="Can the assistant hand chats over to my team?">
+    Yes. Set handoff rules in Bot Boundaries, and use **Takeover** or **Reply** in [Customer Inbox](/customer-inbox-and-leads) to join high-value chats.
+  </Accordion>
+</AccordionGroup>
+
+## Leads and Enquiries
+
+<AccordionGroup>
+  <Accordion title="Where do I see my leads?">
+    In the left menu, go to **Forms and Enquiries** and open **Customer Enquiries** for leads from the chatbot, forms, and other capture flows. For form leads, also check the **Submissions** tab in **Forms**. See [Inbox and Leads](/customer-inbox-and-leads).
+  </Accordion>
+
+  <Accordion title="Why are my leads not appearing?">
+    Check that the widget is verified, your form is **Active**, the correct website and workspace are selected, and your filters are cleared. Your role may also hide the Leads tab. Submit a test entry to confirm.
+  </Accordion>
+
+  <Accordion title="How quickly should I follow up with a lead?">
+    Respond to urgent and human-handoff requests within 15 minutes, pricing and demo requests within 2 hours, and general requests within 24 hours. Do not leave leads in **New** for more than 24 hours.
+  </Accordion>
+</AccordionGroup>
+
+## Billing, Credits, and Team
+
+<AccordionGroup>
+  <Accordion title="What are credits used for?">
+    Some actions use credits, such as AI tasks, website scans, and content generation. If you do not have enough credits, the panel shows an insufficient credit message.
+  </Accordion>
+
+  <Accordion title="How do I add more credits?">
+    Go to [Billing](https://portal.wowagent.ai/billing) and buy a pack of 100, 500, or 1000 credits, or enter a custom amount (whole numbers, from 100 up to less than 1,000,000 credits). Credits cost ₹1 each plus 18% GST. You can also upgrade your plan. See [Plans and Credits](/plans-credits-and-limits).
+  </Accordion>
+
+  <Accordion title="Which plans are available and how much do they cost?">
+    WOWagent has three plans: Launch (₹999/month), Growth (₹3,999/month), and Scale (₹7,999/month), plus 18% GST. You can pay monthly or annually, and annual billing includes bonus credits and days. See [Plans and Credits](/plans-credits-and-limits).
+  </Accordion>
+
+  <Accordion title="How do I invite my team?">
+    Open [User Management](https://portal.wowagent.ai/user-management) and invite team members. They accept the invitation from their email and then select the correct workspace.
+  </Accordion>
+
+  <Accordion title="I cannot open a page. Why?">
+    Your role probably does not have permission for that page. Check that you are in the correct workspace, then ask the workspace owner to review your access in User Management.
+  </Accordion>
+
+  <Accordion title="How do I get help from the WOWagent team?">
+    Create a ticket from [Support Tickets](https://portal.wowagent.ai/support-tickets). Include your website domain, workspace name, the page where the issue happened, what you clicked, a screenshot, and the expected and actual results.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Troubleshooting" icon="wrench" href="/troubleshooting">
+    Fix common issues step by step.
+  </Card>
+
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up WOWagent from start to finish.
+  </Card>
+</CardGroup>

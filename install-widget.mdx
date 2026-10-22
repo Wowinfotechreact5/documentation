@@ -1,0 +1,204 @@
+---
+title: "Add WOWagent AI Chat to Your Website"
+sidebarTitle: "Install Widget"
+description: "Add AI-powered chat to your website with WOWagent. Engage potential customers, answer visitor questions, and create more opportunities to capture leads."
+---
+
+The WOWagent chat widget is a small script that shows your AI assistant on your website. This page explains how to add the script on WordPress, Shopify, Wix, Webflow, through Google Tag Manager (GTM), or on a custom-built website, and how to verify it so live chat works.
+
+<Info>
+  Live chat does not appear on your website until the widget shows **Verified** in the [Integration Center](/integration-center).
+</Info>
+
+## Before You Start
+
+- Add your website to WOWagent first. See [Add Your Website](/add-your-website).
+- Select the correct website in the website switcher. Each website has its own script with its own `data-key`.
+- In [Chatbot Management](/chatbot-management), make sure **Public widget status** is ON. If it is OFF, the widget stays hidden even when the script is installed.
+- Make sure you have access to edit your website, or ask the person who manages it to help.
+
+## Step 1: Copy Your Widget Script
+
+<Steps>
+  <Step title="Open Integration Center">
+    Open [https://portal.wowagent.ai/website/integrations](https://portal.wowagent.ai/website/integrations).
+  </Step>
+  <Step title="Find the Website Widget card">
+    Find the **Website Widget** card for your selected website.
+  </Step>
+  <Step title="Copy the script">
+    Click **Copy Script**. The script includes a `data-key` that links the widget to your website.
+  </Step>
+</Steps>
+
+<Warning>
+  Do not edit the script. If the `data-key` is changed or belongs to another website, verification fails.
+</Warning>
+
+## Step 2: Add the Script to Your Website
+
+Add the script site-wide so it loads on every page, just before the closing `</head>` tag. Choose the option that matches how your website is built.
+
+<Tabs>
+  <Tab title="WordPress">
+    <Steps>
+      <Step title="Open a header code plugin">
+        Use a Header and Footer plugin, or a Custom HTML option, that adds code to every page.
+      </Step>
+      <Step title="Paste the script in the header">
+        Paste the script into the site-wide header section.
+      </Step>
+      <Step title="Save and clear cache">
+        Click **Save**, then clear your website cache and any CDN cache.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Google Tag Manager">
+    <Steps>
+      <Step title="Create a Custom HTML tag">
+        In GTM, create a new tag of type **Custom HTML** and paste the script.
+      </Step>
+      <Step title="Set the trigger to All Pages">
+        Choose the **All Pages** trigger so the widget loads everywhere.
+      </Step>
+      <Step title="Submit and publish">
+        Click **Submit**, then **Publish** the container.
+      </Step>
+      <Step title="Connect Tag Manager in WOWagent">
+        In the Integration Center, connect the same GTM container (for example, GTM-XXXXXXX). If the container is wrong, WOWagent cannot detect the widget.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Shopify">
+    <Steps>
+      <Step title="Open the theme code editor">
+        In your Shopify admin, go to **Online Store > Themes**. Next to your live theme, click the **...** menu and select **Edit code**.
+      </Step>
+      <Step title="Open theme.liquid">
+        In the **Layout** folder, open `theme.liquid`. This file loads on every page of your store.
+      </Step>
+      <Step title="Paste before the closing head tag">
+        Find the closing `</head>` tag and paste the script just above it.
+      </Step>
+      <Step title="Save">
+        Click **Save**. The widget now loads on every page of your store.
+      </Step>
+    </Steps>
+
+    <Tip>
+      If you change or update your theme later, check that the script is still in `theme.liquid`, then verify again.
+    </Tip>
+  </Tab>
+  <Tab title="Wix">
+    <Steps>
+      <Step title="Open Custom Code settings">
+        In your Wix dashboard, go to **Settings**, then open **Custom Code** (under Advanced, or Development & integrations).
+      </Step>
+      <Step title="Add custom code">
+        Click **\+ Add Custom Code** and paste the script into the code box. Give it a name, such as "WOWagent Widget".
+      </Step>
+      <Step title="Choose where it loads">
+        Under **Add Code to Pages**, select **All pages** and **Load code once**. Under **Place Code in**, select **Head**.
+      </Step>
+      <Step title="Apply and publish">
+        Click **Apply**, then publish your site if Wix asks you to.
+      </Step>
+    </Steps>
+
+    <Note>
+      Wix allows custom code only on sites with a paid plan and a connected domain.
+    </Note>
+  </Tab>
+  <Tab title="Webflow">
+    <Steps>
+      <Step title="Open Site settings">
+        In Webflow, open your project's **Site settings** and go to the **Custom code** tab.
+      </Step>
+      <Step title="Paste in Head code">
+        Paste the script into the **Head code** box. Code added here loads on every page of your site.
+      </Step>
+      <Step title="Save changes">
+        Click **Save changes**.
+      </Step>
+      <Step title="Publish your site">
+        Publish the site to your live domain. The script does not run until the site is published.
+      </Step>
+    </Steps>
+
+    <Note>
+      Webflow allows site-wide custom code only on sites with a paid site plan.
+    </Note>
+  </Tab>
+  <Tab title="Custom Website">
+    <Steps>
+      <Step title="Open your main layout template">
+        Open the main layout or template file that every page of your website uses.
+      </Step>
+      <Step title="Paste before the closing head tag">
+        In code view, find the closing `</head>` tag and paste the script just above it.
+      </Step>
+      <Step title="Deploy and clear cache">
+        Save or deploy the change, then clear your website cache and any CDN cache.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Note>
+  If your website is a single-page app (built with tools like React, Vue, or Next.js), also set up Page Re-initialization so the widget keeps working when visitors move between pages. See [AI Navigation](/ai-navigation#page-re-initialization).
+</Note>
+
+## Step 3: Verify the Widget
+
+<Steps>
+  <Step title="Click Verify">
+    Go back to the Integration Center and click **Verify** on the Website Widget card. WOWagent opens your live website and checks for the script with your `data-key`.
+  </Step>
+  <Step title="Wait for the status to turn green">
+    Wait 10 to 30 seconds. The card must show that the installation is detected and the status is **Verified**. Do not leave the page before it turns green.
+  </Step>
+  <Step title="Check your live website">
+    Open your website in an incognito window. The chat bubble must appear in the bottom corner. Test that it opens and closes, and check it on mobile too.
+  </Step>
+</Steps>
+
+## If the Widget Does Not Appear
+
+<AccordionGroup>
+  <Accordion title="Verify fails or stays red">
+    Check that the script is on the correct website and that the `data-key` matches the selected website. Make sure the script is in the site-wide header, not on a single page.
+  </Accordion>
+
+  <Accordion title="Verified, but the bubble is not showing">
+    Clear your website cache and CDN cache, then check again in an incognito window. Make sure **Public widget status** is ON in Chatbot Management.
+  </Accordion>
+
+  <Accordion title="The widget works for others but not for you">
+    Turn off your ad blocker while testing. Ad blockers can hide the widget.
+  </Accordion>
+
+  <Accordion title="Installed with GTM, but not detected">
+    Check that the tag uses the **All Pages** trigger, that the container is published, and that the same container is connected in the Integration Center.
+  </Accordion>
+
+  <Accordion title="The widget disappeared after a website update">
+    Theme changes and redesigns often remove the script. Paste it again, then click **Verify** again.
+  </Accordion>
+
+  <Accordion title="Your website blocks outside scripts">
+    If your website's security settings block outside scripts, allow the WOWagent script in those settings and verify again.
+  </Accordion>
+</AccordionGroup>
+
+If the issue continues, create a support ticket at [https://portal.wowagent.ai/support-tickets](https://portal.wowagent.ai/support-tickets). Include your website domain, how you installed the script, and a screenshot of the Website Widget card status.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Chatbot Management" icon="robot" href="/chatbot-management">
+    Set your assistant's name, greeting, tone, and style.
+  </Card>
+  <Card title="Knowledge Base" icon="book" href="/knowledge-base">
+    Train your assistant with your business details.
+  </Card>
+</CardGroup>

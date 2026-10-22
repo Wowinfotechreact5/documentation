@@ -1,0 +1,256 @@
+---
+title: "Website Enquiry Management & Lead Capture | WOWagent"
+sidebarTitle: "Forms"
+description: "Make it easier to manage website enquiries with WOWagent. Capture customer requests, keep submissions organized, and support a more efficient lead management process."
+---
+
+Forms and Enquiries helps you collect customer information from your website.
+
+Use this section to create website forms, review form submissions, and manage customer enquiries. The chatbot gives you conversations, while forms give you structured leads with the fields you choose.
+
+## Forms URL
+
+Open:
+
+[https://portal.wowagent.ai/forms](https://portal.wowagent.ai/forms)
+
+Or, in the left menu, go to **Forms and Enquiries** and click **Website Forms**.
+
+<Warning>
+  Select the correct website first. Forms are saved separately for each website, so selecting the wrong website shows the wrong list.
+</Warning>
+
+## Customer Enquiries URL
+
+Open:
+
+[https://portal.wowagent.ai/ai-agent/leads](https://portal.wowagent.ai/ai-agent/leads)
+
+Or, in the left menu, go to **Forms and Enquiries** and click **Customer Enquiries**.
+
+This page shows leads from both the chatbot and your forms together. To see form leads only, open **Forms**, go to the **Submissions** tab, and filter by form name.
+
+## Website Forms
+
+Website Forms lets you create and manage forms for your website. Each form covers one use case and has its own embed code and its own submissions table.
+
+You work with these screens:
+
+- **Listing:** All your forms and their status.
+- **Builder:** Where you drag and drop fields.
+- **Setup:** The submit action and form style.
+- **Integration:** The embed code for your website.
+- **Submissions:** Entries from the last 30 days, with filters.
+
+You can use forms for:
+
+- Contact requests with name, phone, and message
+- Service enquiries with a service dropdown and city
+- Demo requests with a date and time slot
+- Quote requests with quantity, scope, and budget
+- Support requests with an order ID and issue type
+- Lead capture with a few basic fields before a chat starts
+- Feedback collection with a rating and comment
+- Appointment requests with a service and time slot
+- Consultation requests with a topic and preferred mode
+
+To create a good form in the builder:
+
+<Steps>
+  <Step title="Click New Form">
+    Give the form a clear name, such as "Contact Main" or "Pricing Quote".
+  </Step>
+  <Step title="Drag needed fields">
+    Available field types are text, email, phone, dropdown, textarea, date, and checkbox.
+  </Step>
+  <Step title="Mark required fields">
+    Mark a field as required only if you must have it. For leads in India, make phone required and email optional.
+  </Step>
+  <Step title="Set the submit action">
+    Choose **Message** to show a thank-you message (for example, "Thanks, our team will call you"), or **Redirect** to send visitors to your thank-you page URL.
+  </Step>
+  <Step title="Set success message">
+    Set the success message and choose a button color that matches your brand.
+  </Step>
+  <Step title="Save and embed">
+    Save the form, copy the embed code (it includes your formKey), paste it on your live page, and check that the form appears correctly.
+  </Step>
+</Steps>
+
+<Warning>
+  Keep your forms Active. Paused forms still appear on your website, but they do not save submissions.
+</Warning>
+
+## Customer Enquiries
+
+Customer Enquiries shows leads and submissions from visitors through both the chatbot and your forms. Use it as one sales queue for your team.
+
+Use it to review:
+
+- The customer's name, phone, and email, and whether they are valid
+- Whether contact details are in the right format, for example 10 digits starting with 6, 7, 8, or 9
+- The visitor's message in their own words, and the service they selected
+- The service they are interested in, matched to your Products list
+- Where the submission came from: the form name, page URL, and whether it came from the chatbot or a form
+- Follow-up flags, such as callback, urgent, or high value
+- A link to the full conversation, if the lead came from the chatbot
+- The lead's status, owner, notes, and timeline
+
+**Daily workflow:**
+
+1. Filter by **New** and **Today**.
+2. Open each lead from top to bottom and read the context before you call.
+3. Call high-intent leads within 15 minutes.
+4. Update the status from **Contacted** to **Qualified**, and then to **Won** or **Lost**.
+5. Add a note about the next step.
+
+Do not leave any lead in **New** for more than 24 hours.
+
+## Good Form Design
+
+A good form is simple and clear. Every extra field lowers the number of people who complete it.
+
+Use only the fields you need. Ask for the essential details first, and collect nice-to-have details later on a call.
+
+For example, a simple enquiry form can include:
+
+- **Name:** Text field, required.
+- **Email:** Email field, optional.
+- **Phone number:** Phone field, required, with a 10-digit check.
+- **Interested service:** Dropdown, required, with 5 to 7 options at most.
+- **Message:** Textarea, optional, with a placeholder such as "Tell us your budget and city".
+
+Avoid asking too many questions unless you need them. Do not ask for address, company, GST number, budget, and source all on the first form. Collect those details on the follow-up call instead.
+
+<Warning>
+  Long forms can cut submissions in half. If you need more details (for example, for a quote), split the form into two steps: first ask for name, phone, and service, and then collect the details after the callback. Test both versions every week.
+</Warning>
+
+Use clear titles: "Get a Quote in 2 Minutes" works better than "Submit". Use action-based button labels: "Request Callback" works better than "Submit". Add a privacy line, such as "We only call about your enquiry. No spam."
+
+## Testing A Form
+
+Test your form every time you create or edit it. A 2-minute test can save you from losing leads.
+
+<Steps>
+  <Step title="Open the form on your website">
+    Open the form on your live website in an incognito window, not just in the builder preview.
+  </Step>
+  <Step title="Submit a test enquiry">
+    Submit a test enquiry with a correctly formatted phone number (such as 9876543210), the name "Test", and a service selected.
+  </Step>
+  <Step title="Go back to WOWagent">
+    Open **Customer Enquiries** and the form's **Submissions** tab.
+  </Step>
+  <Step title="Confirm the enquiry appears">
+    Check that the enquiry appears within 1 minute and that the name, phone, and service match what you entered.
+  </Step>
+  <Step title="Check all fields saved correctly">
+    Check that every field saved correctly, including the message and the source URL.
+  </Step>
+  <Step title="Confirm team knows how to follow up">
+    Make sure your team knows how to follow up. Check the alert email, notifications, and lead assignment.
+  </Step>
+</Steps>
+
+Also test what happens when something is wrong. Submit the form with a required field empty, a 5-digit phone number, and an email without an @ sign. Each case must show a field error instead of saving silently.
+
+Check the form on mobile to make sure the chatbot bubble does not overlap it. If the bubble covers the submit button, change the widget position in [Chatbot Management](/chatbot-management).
+
+After you confirm the test worked, delete the test lead or mark it as **Lost** with a "Test" note to keep your reports clean.
+
+## Using Forms With AI Assistant
+
+Your AI assistant can guide visitors toward your forms. The chat answers questions, and the form captures the lead.
+
+For example:
+
+1. A visitor asks about pricing.
+2. The assistant shares a price range and a link, then asks if they want a callback, showing a form chip.
+3. The visitor clicks the chip, fills in their name and phone, and submits.
+4. The enquiry appears in your panel, showing the chatbot as the source along with the form name and the chat context.
+
+**Setup:** In Chatbot Behaviour, turn on form suggestions and link the correct form (by its formKey) to each intent. For example, link the pricing intent to your Quote form and the support intent to your Support form. When you test a phrase like "I want pricing", the assistant must show the form chip, not just a text answer.
+
+<Warning>
+  Do not show a form as soon as a visitor says "Hi". Answer their question first, then offer the form. Showing a form instantly feels like spam and makes visitors leave the chat.
+</Warning>
+
+## Improve Enquiry Quality
+
+To get better enquiries, improve your form, chatbot, and Knowledge Base together:
+
+- **Use clear form titles** that state the outcome and the time. Example: "Get a Plumbing Quote on WhatsApp in 10 Minutes".
+- **Ask for useful contact details.** Make phone required and email optional, and add a city dropdown to filter by service area.
+- **Add service options if needed.** A dropdown with your top services stops junk free-text answers like "hi".
+- **Keep the message field open for extra details,** with a hint such as "budget and timeline".
+- **Test the form after every change** by submitting it for real and checking Submissions.
+- **Review enquiries every day.** If you spot a junk pattern, fix that field the same day.
+- **Keep your Knowledge Base updated.** If the chatbot shows a wrong price, visitors arrive at the form with wrong expectations.
+
+**Every week:** Check the conversion rate for each form. Pause the weakest form, duplicate the best one with a single change, and compare the results. Also check your spam rate, and add a simple captcha or phone check if bot spam is high.
+
+## If Enquiries Are Missing
+
+<AccordionGroup>
+  <Accordion title="The correct website is selected">
+    The website switcher must match the domain where the form is placed.
+  </Accordion>
+
+  <Accordion title="The form is active">
+    The form's status in the listing must be **Active**, not Paused or Draft.
+  </Accordion>
+
+  <Accordion title="The form is embedded correctly">
+    Your live page must contain the form's embed code with the correct formKey. View the page source and check that the key matches. Paste the embed code again after any theme change.
+  </Accordion>
+
+  <Accordion title="The visitor completed submission">
+    Check for field errors, such as an invalid phone number or an empty required field. Ask the visitor for a screenshot, and test the form yourself.
+  </Accordion>
+
+  <Accordion title="Integration setup is complete">
+    The widget and other required items must be green in the [Integration Center](/integration-center). Your website's security settings must also allow forms to be embedded on your domain. Otherwise, the form is blocked.
+  </Accordion>
+
+  <Accordion title="You are checking the correct workspace">
+    The workspace shown at the top left must be the right one. The wrong workspace shows zero enquiries.
+  </Accordion>
+
+  <Accordion title="You have permission to view enquiries">
+    Viewer or Custom roles can hide phone numbers or the whole tab. Ask your Admin to update your access in User Management.
+  </Accordion>
+
+  <Accordion title="Filters">
+    Clear the search, status, and date filters. Leads are often missed because the date filter is set to Today but the lead arrived yesterday.
+  </Accordion>
+
+  <Accordion title="Public submit rate limit">
+    Submitting many times in a row can be temporarily blocked. Wait 1 minute and try once more.
+  </Accordion>
+</AccordionGroup>
+
+If the issue continues, create a support ticket:
+
+[https://portal.wowagent.ai/support-tickets](https://portal.wowagent.ai/support-tickets)
+
+Include the following:
+
+- Your website domain
+- The form name and formKey
+- The test phone number and the time you submitted
+- Screenshots of the live form, where the embed code is placed, your Submissions filter, and your Integration status
+
+Do not include passwords.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Inbox and Leads" icon="inbox" href="/customer-inbox-and-leads">
+    Follow up with chat and form leads.
+  </Card>
+
+  <Card title="Chatbot Management" icon="robot" href="/chatbot-management">
+    Let your assistant suggest forms in chat.
+  </Card>
+</CardGroup>
